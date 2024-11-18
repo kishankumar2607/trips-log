@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Trips Log</title>
+    <link rel="stylesheet" href="trips.css">
+</head>
+<body>
+    <main>
+        <h1>Trips Log</h1>
+        <div id="trips">
+            <textarea id="trip_list" rows="8" cols="42" disabled></textarea>
+        </div>
+        <div>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination">
+        </div>
+        <div>
+            <label for="km">Kilometers Driven:</label>
+            <input type="text" id="km">
+        </div>
+        <div>
+            <label for="litres">Litres of Gas Used:</label>
+            <input type="text" id="litres">
+        </div>
+        <div>
+            <label></label>
+            <input type="button" id="add_trip" value="Add Trip">
+        </div>
+        <small>&copy; "KishanKumarDas" 2024</small>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="lib_trips.js"></script>
+    <script src="trips.js"></script>
+</body>
+</html>
